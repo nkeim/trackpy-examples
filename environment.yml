@@ -4,8 +4,12 @@
    - conda-forge
  dependencies:
    - python=3
-   - trackpy=0.4.1
-   - pims
+   - pip
+     #- trackpy=0.4.1
+     #- pims
    - pytables
    - matplotlib
    - ipyparallel
+   - pip:
+       - git+git://github.com/soft-matter/pims.git#egg=pims
+       - git+git://github.com/soft-matter/trackpy.git#egg=trackpy
